@@ -1,21 +1,13 @@
 @font-face {
-  font-family: 'Inter var';
+  font-family: 'bluubi';
   font-style: normal;
   font-weight: 100 900;
   font-display: block;
-  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Inter var';
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: block;
-  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
-  font-named-instance: 'Italic';
+  src: url(/fonts/bluunext-bolditalic-webfont.woff) format('woff');
 }
 
 body {
-  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: 'bluubi', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: subpixel-antialiased;
@@ -24,6 +16,7 @@ body {
   font-variation-settings: 'wght' 450;
   font-variant: common-ligatures contextual;
   letter-spacing: -0.02em;
+  padding: 0;
 }
 b,
 strong,
@@ -34,6 +27,8 @@ h6 {
   font-variation-settings: 'wght' 650;
 }
 h1 {
+  font-family: 'bluubi', serif;
+  font-size: 24px;
   font-variation-settings: 'wght' 850;
 }
 h2 {
@@ -54,6 +49,39 @@ details summary {
 
 img.next-image {
   margin: 0;
+}
+
+div.photo-mask--0 > span {
+  mask-image: url('/svg/clip1.svg');
+  mask-size: 100%;
+}
+
+div.photo-mask--1 > span {
+  mask-image: url('/svg/clip2.svg');
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+div.photo-mask--2 > span {
+  mask-image: url('/svg/clip3.svg');
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+div.photo-mask--3 > span {
+  mask-image: url('/svg/clip4.svg');
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+div.photo-mask--4 > span {
+  mask-image: url('/svg/clip5.svg');
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .prose a {
