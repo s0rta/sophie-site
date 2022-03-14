@@ -42,7 +42,7 @@ export default function Home({ images }) {
                   marginLeft: Math.floor(Math.random() * 400) + 'px'
                 }}
               >
-                <Link href={`/posts/${image.split('.')[0]}-page`}>
+                <Link href={`/images/${image.split('.')[0]}-page`}>
                   <a>
                     <Image
                       src={'/images/' + image}

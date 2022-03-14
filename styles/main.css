@@ -126,6 +126,9 @@ div.photo-mask > a > span {
   color: #0074de;
 }
 
-.nav-line .nav-link {
-  color: #69778c;
+article.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+

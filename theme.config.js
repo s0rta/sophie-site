@@ -1,13 +1,25 @@
-const YEAR = new Date().getFullYear()
+import Link from 'next/link'
 
 export default {
+  prevLinks: false,
+  nextLinks: true,
+  back: false,
+  head: <></>,
   footer: (
-    <small style={{ display: 'block', marginTop: '8rem' }}>
-      <time>{YEAR}</time> © Your Name.
-      <a href="/feed.xml">RSS</a>
+    <div style={{ marginTop: '8rem' }}>
+      <div>
+        <Link href="/">
+          <a>Continue Exploring</a>
+        </Link>
+      </div>
       <style jsx>{`
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         a {
-          float: right;
+          color: inherit;
         }
         @media screen and (max-width: 480px) {
           article {
@@ -16,6 +28,6 @@ export default {
           }
         }
       `}</style>
-    </small>
+    </div>
   )
 }
