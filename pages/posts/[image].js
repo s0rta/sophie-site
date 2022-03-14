@@ -13,7 +13,7 @@ const Post = () => {
         width="500"
         height="500"
         objectFit="contain"
-        src={'/images/' + image.split('-')[0] + '.jpg'}
+        src={'/images/' + image?.split('-')[0] + '.jpg'}
       />
       <Link href="/">
         <a>continue exploring</a>
