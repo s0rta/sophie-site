@@ -8,17 +8,20 @@ const Post = () => {
 
   return (
     <div>
-      <h1>{image.split('-')[0]}</h1>
-      <Image
-        width="500"
-        height="500"
-        objectFit="contain"
-        src={image && '/images/' + image.split('-')[0] + '.jpg'}
-      />
-      <Link href="/">
-        <a>continue exploring</a>
-      </Link>
-
+      {image && (
+        <div>
+          <h1>{image.split('-')[0]}</h1>
+          <Image
+            width="500"
+            height="500"
+            objectFit="contain"
+            src={'/images/' + image.split('-')[0] + '.jpg'}
+          />
+          <Link href="/">
+            <a>continue exploring</a>
+          </Link>
+        </div>
+      )}
       <style jsx>{`
         div {
           display: flex;
