@@ -7,32 +7,41 @@ const Post = () => {
   const { image } = router.query
 
   return (
-    <div>
-      {image && (
-        <div>
-          <h1>{image.split('-')[0]}</h1>
-          <Image
-            width="500"
-            height="500"
-            objectFit="contain"
-            src={'/images/' + image.split('-')[0] + '.jpg'}
-          />
-          <Link href="/">
-            <a>continue exploring</a>
-          </Link>
-        </div>
-      )}
-      <style jsx>{`
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        p {
-          font-size: 20px;
-        }
-      `}</style>
-    </div>
+    <article className="container">
+      <div>
+        {image && (
+          <div className="image-wrap">
+            <h1>Untitled</h1>
+            <Image
+              width="600"
+              height="500"
+              objectFit="contain"
+              src={'/images/' + image.split('-')[0] + '.jpg'}
+            />
+            <Link href="/">
+              <a>Continue exploring</a>
+            </Link>
+          </div>
+        )}
+        <style jsx>{`
+          a {
+            text-decoration: underline;
+            font-size: 18px;
+          }
+          h1 {
+            font-size: 2.25rem;
+            color: #1a202c;
+            margin-bottom: 0;
+            align-self: flex-start;
+          }
+          .image-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        `}</style>
+      </div>
+    </article>
   )
 }
 

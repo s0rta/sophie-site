@@ -27,6 +27,11 @@ export default {
             padding-bottom: 4rem;
           }
         }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
       `}</style>
     </div>
   )

@@ -94,33 +94,15 @@ div.photo-mask > a > span {
   mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 49%, rgba(255,255,255,1) 100%); 
   }
 
-/* div.photo-mask--1 > a > span { */
-/*   mask-image: url('/svg/clip2.svg'); */
-/*   mask-size: 100%; */
-/*   mask-repeat: no-repeat; */
-/*   mask-position: center; */
-/* } */
-
-/* div.photo-mask--2 > a > span { */
-/*   mask-image: url('/svg/clip3.svg'); */
-/*   mask-size: 100%; */
-/*   mask-repeat: no-repeat; */
-/*   mask-position: center; */
-/* } */
-
-/* div.photo-mask--3 > a > span { */
-/*   mask-image: url('/svg/clip4.svg'); */
-/*   mask-size: 100%; */
-/*   mask-repeat: no-repeat; */
-/*   mask-position: center; */
-/* } */
-
-/* div.photo-mask--4 > a > span { */
-/*   mask-image: url('/svg/clip5.svg'); */
-/*   mask-size: 100%; */
-/*   mask-repeat: no-repeat; */
-/*   mask-position: center; */
-/* } */
+p {
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 0 !important;
+}
+  h1 {
+  margin-bottom: 0 !important;
+  
+}
 
 .prose a {
   color: #0074de;
